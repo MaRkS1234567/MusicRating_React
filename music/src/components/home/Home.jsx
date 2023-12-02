@@ -5,6 +5,7 @@ import Header from "./header/Header";
 import RatingLeft from "./ratings/RatingLeft";
 import RatingRight from "./ratings/RatingRight";
 import Ratings from "./ratings/Ratings";
+import Reverso from "./reverso/Reverso";
 
 const Home = () => {
   const [phrases, setPhrases] = useState(5);
@@ -26,7 +27,7 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <Header />
+      {/* <Header />
       <Ratings
         ritm={ritm}
         setRitm={setRitm}
@@ -41,7 +42,8 @@ const Home = () => {
         <RatingLeft actualy={actualy} setActualy={setActualy} />
         <RatingRight vaib={vaib} setVaib={setVaib} />
       </div>
-      <Bottom sum={sum} />
+      <Bottom sum={sum} /> */}
+      <Reverso />
     </div>
   );
 };

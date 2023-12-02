@@ -28,7 +28,7 @@ const Ratings = ({
         </div>
         <div>
           <div>
-            <p>Рефлизация стиля</p>
+            <p>Реaлизация стиля</p>
             <p className={styles.number}>{real}</p>
           </div>
           <input

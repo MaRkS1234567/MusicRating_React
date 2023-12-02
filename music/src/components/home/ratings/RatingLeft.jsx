@@ -8,7 +8,7 @@ const RatingLeft = ({ actualy, setActualy }) => {
         <p className={styles.number}>{actualy}</p>
       </div>
       <input
-        style={{ width: "100%" }}
+        style={{ width: "100%", margin: "0" }}
         min={0}
         max={10}
         type="range"

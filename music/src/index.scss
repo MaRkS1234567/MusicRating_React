@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: linear-gradient(to bottom right, rgb(11, 11, 11), rgb(38, 38, 38))
+    no-repeat;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,83 +44,107 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #b4b7fa;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input[type="range"] {
+  height: 38px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background-color: transparent;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #450e8c;
+  background: #a067eb;
+  border-radius: 5px;
+  border: 1px solid #450e8c;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #450e8c;
+  border: 1px solid #450e8c;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #b4b7fa;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #a067eb;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #450e8c;
+  background: #a067eb;
+  border-radius: 5px;
+  border: 1px solid #450e8c;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #450e8c;
+  border: 1px solid #450e8c;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #b4b7fa;
+  cursor: pointer;
+} //#a067eb
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #a067eb;
+  border: 1px solid #450e8c;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #450e8c;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #a067eb;
+  border: 1px solid #450e8c;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #450e8c;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #450e8c;
+  border: 1px solid #450e8c;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #b4b7fa;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #a067eb;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #a067eb;
 }
 
-html {
-  input[type="range"] {
-    outline: 0;
-    border: 0;
-    border-radius: 500px;
-    width: 400px;
-    max-width: 100%;
-    margin: 24px 0 16px;
-    transition: box-shadow 0.2s ease-in-out;
-    // Chrome
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-      & {
-        overflow: hidden;
-        height: 20px;
-        -webkit-appearance: none;
-        background-color: #ddd;
-      }
-      &::-webkit-slider-runnable-track {
-        height: 20px;
-        -webkit-appearance: none;
-        // color: #444;
-        // margin-top: -1px;
-        transition: box-shadow 0.2s ease-in-out;
-      }
-      &::-webkit-slider-thumb {
-        width: 20px;
-        -webkit-appearance: none;
-        height: 20px;
-        cursor: ew-resize;
-        background: #fff;
-        box-shadow:
-          -340px 0 0 330px #8e259a,
-          inset 0 0 0 20px #1c0c36;
-        border-radius: 50%;
-        transition: box-shadow 0.2s ease-in-out;
-        position: relative;
-      }
-      &:active::-webkit-slider-thumb {
-        background: #fff;
-        box-shadow:
-          -340px 0 0 330px #8e259a,
-          inset 0 0 0 3px #8e259a;
-      }
-    }
-    // Firefox
-    &::-moz-range-progress {
-      background-color: #43e5f7;
-    }
-    &::-moz-range-track {
-      background-color: #9a905d;
-    }
-    // IE
-    &::-ms-fill-lower {
-      background-color: #43e5f7;
-    }
-    &::-ms-fill-upper {
-      background-color: #9a905d;
-    }
-  }
-}
+// input[type="range"][orient="vertical"] {
+//   appearance: slider-vertical;
+//   width: 40px;
+//   height: 175px;
+//   // padding: 0 5px;
+// }
