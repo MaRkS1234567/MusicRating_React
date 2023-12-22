@@ -1,0 +1,91 @@
+.adjustments {
+  max-width: calc(70% - 160px);
+  display: flex;
+  background: #450e8c;
+  height: 500px;
+  padding: 30px;
+  border-radius: 35px;
+
+  > div {
+    width: 25%;
+
+    > p {
+      margin-top: 0px;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 1000;
+      background: #d55d12;
+      border-radius: 5px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    > input {
+      margin-top: 10px;
+      rotate: 90deg;
+      position: relative;
+      width: 430px;
+      top: 200px;
+    }
+  }
+}
+
+.mt {
+  margin-top: 35px !important;
+}
+
+.text {
+  > p {
+    text-align: left !important;
+    width: 64px;
+  }
+
+  > input {
+    right: 176px !important;
+  }
+}
+
+.structure {
+  > p {
+    text-align: center !important;
+    margin-right: 35px;
+    padding-right: 5px !important;
+  }
+
+  > input {
+    right: 148px !important;
+  }
+}
+
+.reo {
+  > p {
+    text-align: center !important;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  > input {
+    right: 125px !important;
+  }
+}
+
+.diversity {
+  > p {
+    text-align: right !important;
+    margin-left: 15px;
+    width: 150px;
+  }
+
+  > input {
+    right: 100px !important;
+  }
+}
+
+.top {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.bottom {
+  border-radius: 0 0 5px 5px !important;
+}

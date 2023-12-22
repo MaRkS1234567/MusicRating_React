@@ -1,39 +1,19 @@
 .header {
   display: flex;
-  margin: 35px;
-  background: #1c0c36;
-  border-radius: 10px;
-  padding: 35px;
-  width: calc(100% - 140px);
+  background: #450e8c;
+  width: calc(70% - 100px);
+  margin-bottom: 40px;
+  border-radius: 35px;
 
-  > div {
-    background-color: #8e259a;
-    margin-left: 35px;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    > img {
-      margin-left: auto;
-      margin-right: 15px;
-      border-radius: 10px;
-    }
-
-    > p {
-      padding: 0;
-      margin: 0;
-      margin-left: 35px;
-      font-size: 25px;
-    }
-    > svg {
-    }
+  > img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
   }
-}
 
-.disc {
-  background-color: transparent !important;
-  margin-left: 0 !important;
-  width: auto !important;
+  > p {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 30px;
+  }
 }
