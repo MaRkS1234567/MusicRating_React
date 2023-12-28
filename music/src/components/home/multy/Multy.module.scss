@@ -25,6 +25,34 @@
       padding-bottom: 7px;
     }
   }
+  > div {
+    > div {
+      display: flex;
+      > input {
+        width: calc(100% - 60px);
+      }
+      > div {
+        background: #000;
+        margin: 0;
+        padding: 12px;
+        margin-left: 10px;
+        // padding-top: 5px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 1000;
+        height: 25px;
+        width: 25px;
+        margin-top: 4px;
+        text-align: center;
+        > p {
+          padding-top: 0px;
+          position: relative;
+          margin: 0;
+          top: -4px;
+        }
+      }
+    }
+  }
 }
 
 .score {

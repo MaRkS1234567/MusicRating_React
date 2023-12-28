@@ -27,6 +27,12 @@ const Home = () => {
   //     Number(vaib)) *
   //     1.66
   // );
+  const [text, setText] = useState(500);
+  const [ritm, setRitm] = useState(500);
+  const [reo, setReo] = useState(500);
+  const [idea, setIdea] = useState(500);
+  const [trend, setTrend] = useState(3);
+  const [feel, setFeel] = useState(3);
 
   return (
     <div className={styles.home}>
@@ -49,8 +55,26 @@ const Home = () => {
       {/* <Reverso /> */}
       <Header />
       <div className={styles.flex}>
-        <Adjustments />
-        <Multy />
+        <Adjustments
+          text={text}
+          setText={setText}
+          ritm={ritm}
+          setRitm={setRitm}
+          reo={reo}
+          setReo={setReo}
+          idea={idea}
+          setIdea={setIdea}
+        />
+        <Multy
+          text={text}
+          ritm={ritm}
+          reo={reo}
+          idea={idea}
+          trend={trend}
+          setTrend={setTrend}
+          feel={feel}
+          setFeel={setFeel}
+        />
       </div>
     </div>
   );

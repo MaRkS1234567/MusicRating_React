@@ -20,10 +20,10 @@
 
       > input {
         margin-top: 10px;
-        rotate: 90deg;
+        rotate: 270deg;
         position: relative;
-        width: 380px;
-        top: 185px;
+        width: 405px;
+        top: 200px;
       }
     }
   }
@@ -35,25 +35,34 @@
 
 .text {
   > input {
-    right: 112px !important;
+    right: 122px !important;
+  }
+  > p {
+    left: 14px !important;
   }
 }
 
 .structure {
   > input {
-    right: 107px !important;
+    right: 117px !important;
+  }
+  > p {
+    left: 19px !important;
   }
 }
 
 .reo {
   > input {
-    right: 102px !important;
+    right: 112px !important;
+  }
+  > p {
+    left: 25px !important;
   }
 }
 
 .diversity {
   > input {
-    right: 100px !important;
+    right: 110px !important;
   }
 }
 
@@ -127,4 +136,27 @@
 .top1 {
   border-radius: 5px 5px 0 0 !important;
   margin-left: 67px !important;
+}
+
+.result {
+  position: relative;
+  top: 147px;
+  left: 28px;
+  margin: 0;
+  width: 50px;
+  // background: #450e8c;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  // height: 50px;
+  // padding: 17px;
+  // padding-top: 6px;
+  // padding-bottom: 8px;
+  border-radius: 50px !important;
+  text-align: center;
+}
+
+.ten {
+  > p {
+    color: #d55d12 !important;
+  }
 }
