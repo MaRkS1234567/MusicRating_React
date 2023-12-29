@@ -79,9 +79,24 @@
   > span {
     font-size: 65px;
     margin-top: 15px;
+    display: flex;
   }
 }
 
 .parent {
   width: calc(30% - 0px);
+}
+
+.sqqi {
+  font-size: 60px;
+  font-family: "Smooch";
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.win {
+  background: linear-gradient(to bottom right, #450e8c, #d55d12) no-repeat;
+  height: 132px;
+  border-radius: 35px;
+  padding-left: 65px;
 }

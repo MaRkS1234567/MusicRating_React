@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import styles from "./Multy.module.scss";
+import cn from "clsx";
 
 const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
   const number =
@@ -7,6 +8,12 @@ const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
     Math.round(ritm / 100) +
     Math.round(reo / 100) +
     Math.round(idea / 100);
+
+  const RESULT = Math.round(
+    number +
+      number * (trend / 10) +
+      (number + number * (trend * 0.123)) * (feel * 0.123)
+  );
   return (
     <div className={styles.parent}>
       <div className={styles.multy}>
@@ -45,16 +52,14 @@ const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
           </div>
         </div>
       </div>
-      <div className={styles.score}>
-        <div>
-          <p>Sqqi</p>
-        </div>
+      <div className={cn(styles.score, RESULT === 100 && styles.win)}>
+        {RESULT != 100 && (
+          <div>
+            <p>Sqqi</p>
+          </div>
+        )}
         <span>
-          {Math.round(
-            number +
-              number * (trend / 10) +
-              (number + number * (trend * 0.123)) * (feel * 0.123)
-          )}
+          {RESULT === 100 ? <p className={styles.sqqi}>Sqqi</p> : RESULT}
           /100
         </span>
       </div>
