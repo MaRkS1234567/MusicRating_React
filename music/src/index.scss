@@ -1,34 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Rubik+Doodle+Shadow&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 :root {
-  font-family: "Merriweather";
+  font-family: "Rubik Mono One";
   line-height: 1.5;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(to bottom right, rgb(11, 11, 11), rgb(38, 38, 38))
-    no-repeat;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+    }
+    a:hover {
+      color: #535bf2;
+      }
+      
 body {
+  background-image: url("assets/img/main.png")!important;
+  background-size: 110%;
+  // background-repeat: no-repeat;
+  // background: #b9b9b9;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -45,7 +47,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #b4b7fa;
+  // background-image: url("assets/img/rythm.png");
 }
 button:focus,
 button:focus-visible {
@@ -53,7 +55,7 @@ button:focus-visible {
 }
 
 input[type="range"] {
-  height: 38px;
+  // height: 38px;
   -webkit-appearance: none;
   margin: 10px 0;
   width: 100%;
@@ -64,37 +66,39 @@ input[type="range"]:focus {
 }
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 20px;
+  height: 28px;     // ШИРИНА В MYLTY
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 1px 1px 1px #450e8c;
-  background: #a067eb;
-  border-radius: 5px;
-  border: 1px solid #450e8c;
+  // box-shadow: 1px 1px 1px #450e8c;
+  // background-image: url("assets/img/rythm.png");
+  background: no-repeat !important;
+  // border-radius: 5px;
+  // border: 1px solid #000000;
 }
 input[type="range"]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #450e8c;
-  border: 1px solid #450e8c;
-  height: 40px;
+  // box-shadow: 1px 1px 1px #ffffff;
+  border: 1px solid #ffffff;
+  height: 50px;
   width: 15px;
   border-radius: 5px;
-  background: #b4b7fa;
+  background: #000000;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -11px;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #a067eb;
+  // background-image: url("assets/img/rythm.png");
+  // background: #fff;
 }
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 20px;
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 1px 1px 1px #450e8c;
-  background: #a067eb;
+  // box-shadow: 1px 1px 1px #450e8c;
+  background: #ffffff;
   border-radius: 5px;
-  border: 1px solid #450e8c;
+  border: 1px solid #000000;
 }
 input[type="range"]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #450e8c;
@@ -117,13 +121,13 @@ input[type="range"]::-ms-track {
 input[type="range"]::-ms-fill-lower {
   background: #a067eb;
   border: 1px solid #450e8c;
-  border-radius: 10px;
+  // border-radius: 10px;
   box-shadow: 1px 1px 1px #450e8c;
 }
 input[type="range"]::-ms-fill-upper {
   background: #a067eb;
   border: 1px solid #450e8c;
-  border-radius: 10px;
+  // border-radius: 10px;
   box-shadow: 1px 1px 1px #450e8c;
 }
 input[type="range"]::-ms-thumb {
@@ -132,7 +136,7 @@ input[type="range"]::-ms-thumb {
   border: 1px solid #450e8c;
   height: 50px;
   width: 15px;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: #b4b7fa;
   cursor: pointer;
 }

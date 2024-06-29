@@ -10,15 +10,13 @@ const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
     Math.round(idea / 100);
 
   const RESULT = Math.round(
-    number +
-      number * (trend / 10) +
-      (number + number * (trend * 0.123)) * (feel * 0.123)
+    number + number * (trend * 0.1) + (number + number * (trend * 0.1)) * (feel * 0.1)
   );
   return (
     <div className={styles.parent}>
       <div className={styles.multy}>
         <div>
-          <p>Трендовость жанра </p>
+          <p>АТМОСФЕРА / ВАЙБ</p>
           <div>
             <input
               type="range"
@@ -35,7 +33,7 @@ const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
           </div>
         </div>
         <div>
-          <p>Впечатление</p>
+          <p>АКТУАЛЬНОСТЬ</p>
           <div>
             <input
               type="range"
@@ -52,15 +50,15 @@ const Multy = ({ text, ritm, reo, idea, feel, setFeel, trend, setTrend }) => {
           </div>
         </div>
       </div>
-      <div className={cn(styles.score, RESULT === 100 && styles.win)}>
-        {RESULT != 100 && (
+      <div className={cn(styles.score, RESULT === 90 && styles.win)}>
+        {RESULT != 90 && (
           <div>
             <p>Sqqi</p>
           </div>
         )}
         <span>
-          {RESULT === 100 ? <p className={styles.sqqi}>Sqqi</p> : RESULT}
-          /100
+          {RESULT === 90 ? <p className={styles.sqqi}>Sqqi</p> : RESULT}
+          /90
         </span>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Score = () => {
   return (
     <div className={styles.score}>
       <p>Squicki</p>
-      <span>75/100</span>
+      <span>60/90</span>
     </div>
   );
 };

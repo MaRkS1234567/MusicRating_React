@@ -15,22 +15,6 @@ const Adjustments = ({
   return (
     <div className={styles.adjustments}>
       <div className={styles.header}>
-        <div className={styles.rhyme}>
-          <p className={styles.top}>Текст</p>
-          <span className={styles.bottom_r}>Рифмы</span>
-        </div>
-        <div className={styles.rithm}>
-          <p className={styles.top}>Структура</p>
-          <p className={styles.bottom}> Ритмика</p>
-        </div>
-        <div className={styles.harism}>
-          <p className={styles.top}>Реализация</p>
-          <p className={styles.bottom2}>Харизма</p>
-        </div>
-        <div className={styles.idea}>
-          <p className={styles.top1}>Идеи</p>
-          <p className={styles.bottom}>Фишки</p>
-        </div>
       </div>
       <div className={styles.under}>
         <div className={styles.text}>
@@ -43,10 +27,10 @@ const Adjustments = ({
             onChange={(e) => {
               setText(e.target.value);
               document.getElementById("textTop").style.top =
-                -((text - 870) / 2.55) + "px";
+                -((text - 805) / 2.05) + "px";
             }}
           />
-          <p id="textTop" className={styles.result}>
+          <p id="textTop" className={styles.result1}>
             {Math.round(text / 100)}
           </p>
         </div>
@@ -59,10 +43,10 @@ const Adjustments = ({
             onChange={(e) => {
               setRitm(e.target.value);
               document.getElementById("ritmTop").style.top =
-                -((ritm - 870) / 2.55) + "px";
+              -((ritm - 805) / 2.05) + "px";
             }}
           />
-          <p id="ritmTop" className={styles.result}>
+          <p id="ritmTop" className={styles.result2}>
             {Math.round(ritm / 100)}
           </p>
         </div>
@@ -75,10 +59,10 @@ const Adjustments = ({
             onChange={(e) => {
               setReo(e.target.value);
               document.getElementById("reoTop").style.top =
-                -((reo - 870) / 2.55) + "px";
+              -((reo - 805) / 2.05) + "px";
             }}
           />
-          <p id="reoTop" className={styles.result}>
+          <p id="reoTop" className={styles.result3}>
             {Math.round(reo / 100)}
           </p>
         </div>
@@ -93,10 +77,10 @@ const Adjustments = ({
             onChange={(e) => {
               setIdea(e.target.value);
               document.getElementById("ideaTop").style.top =
-                -((idea - 870) / 2.55) + "px";
+              -((idea - 805) / 2.05) + "px";
             }}
           />
-          <p id="ideaTop" className={styles.result}>
+          <p id="ideaTop" className={styles.result4}>
             {Math.round(idea / 100)}
           </p>
         </div>

@@ -1,6 +1,9 @@
 .header {
   display: flex;
-  background: #450e8c;
+  // background-image: url("/src/assets/img/back.jpeg");
+  background: black;
+  background-position: right 5% bottom 11%;
+  background-size: 150%;
   width: calc(70% - 100px);
   margin-bottom: 40px;
   border-radius: 35px;
@@ -14,6 +17,8 @@
   > p {
     font-size: 20px;
     font-weight: 800;
-    margin-left: 30px;
+    margin-left: 20px;
+    // letter-spacing: 0.62rem;
+    color: white;
   }
 }
